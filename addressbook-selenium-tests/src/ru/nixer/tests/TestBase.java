@@ -10,17 +10,16 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 public class TestBase {
 
 	private static WebDriver driver;
 	private static String baseUrl;
-	private static boolean acceptNextAlert = true;
-	private static StringBuffer verificationErrors = new StringBuffer();
+	private boolean acceptNextAlert = true;
+	private StringBuffer verificationErrors = new StringBuffer();
 
 	@BeforeTest
 	public void setUp() throws Exception {
@@ -100,4 +99,45 @@ public class TestBase {
 	    }
 	  }
 
+
+	protected void returnToHomePage() {
+		driver.findElement(By.linkText("home")).click();
+	}
+
+	protected void submitContactCreation() {
+		driver.findElement(By.name("submit")).click();
+	}
+
+	protected void fillContactForm(GroupContactData group) {
+		driver.findElement(By.name("firstname")).clear();
+	    driver.findElement(By.name("firstname")).sendKeys(group.firstname);
+	    driver.findElement(By.name("lastname")).clear();
+	    driver.findElement(By.name("lastname")).sendKeys(group.lastname);
+	    driver.findElement(By.name("address")).clear();
+	    driver.findElement(By.name("address")).sendKeys(group.address);
+	    driver.findElement(By.name("home")).clear();
+	    driver.findElement(By.name("home")).sendKeys(group.home_phone);
+	    driver.findElement(By.name("mobile")).clear();
+	    driver.findElement(By.name("mobile")).sendKeys(group.mobile_phone);
+	    driver.findElement(By.name("work")).clear();
+	    driver.findElement(By.name("work")).sendKeys(group.work_phone);
+	    driver.findElement(By.name("email")).clear();
+	    driver.findElement(By.name("email")).sendKeys(group.email1);
+	    driver.findElement(By.name("email2")).clear();
+	    driver.findElement(By.name("email2")).sendKeys(group.email2);
+	    new Select(driver.findElement(By.name("bday"))).selectByVisibleText(group.bday);
+	    new Select(driver.findElement(By.name("bmonth"))).selectByVisibleText(group.bmonth);
+	    driver.findElement(By.name("byear")).clear();
+	    driver.findElement(By.name("byear")).sendKeys(group.byear);
+	    new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(group.group_name);
+	    driver.findElement(By.name("address2")).clear();
+	    driver.findElement(By.name("address2")).sendKeys(group.address2);
+	    driver.findElement(By.name("phone2")).clear();
+	    driver.findElement(By.name("phone2")).sendKeys(group.phone2);
+	}
+
+	protected void initNewContactCreation() {
+		driver.findElement(By.linkText("add new")).click();
+	}
+	
 }

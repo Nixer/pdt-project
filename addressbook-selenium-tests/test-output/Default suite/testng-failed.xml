@@ -3,24 +3,18 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ru.nixer.tests.TestBase">
+      <class name="ru.nixer.tests.GroupCreationTests">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- ru.nixer.tests.TestBase -->
-      <class name="ru.nixer.tests.AlsoGroupCreationTests">
-        <methods>
-          <include name="testEmptyGroupCreation"/>
-          <include name="testNonEmptyGroupCreation"/>
-        </methods>
-      </class> <!-- ru.nixer.tests.AlsoGroupCreationTests -->
-      <class name="ru.nixer.tests.GroupCreationTests">
-        <methods>
-          <include name="testEmptyGroupCreation"/>
-          <include name="testNonEmptyGroupCreation"/>
-        </methods>
       </class> <!-- ru.nixer.tests.GroupCreationTests -->
+      <class name="ru.nixer.tests.ContactCreationTests">
+        <methods>
+          <include name="testEmptyContactCreation"/>
+          <include name="testNonEmptyContactCreation"/>
+        </methods>
+      </class> <!-- ru.nixer.tests.ContactCreationTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
