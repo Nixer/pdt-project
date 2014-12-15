@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10440" started-at="2014-12-15T01:21:45Z" finished-at="2014-12-15T01:21:56Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10440" started-at="2014-12-15T01:21:45Z" finished-at="2014-12-15T01:21:56Z">
+      <class name="ru.nixer.tests.TestBase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.nixer.tests.TestBase@71f31c4e]" name="setUp" is-config="true" duration-ms="5471" started-at="2014-12-14T17:21:45Z" finished-at="2014-12-14T17:21:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.nixer.tests.TestBase@71f31c4e]" name="tearDown" is-config="true" duration-ms="201" started-at="2014-12-14T17:21:55Z" finished-at="2014-12-14T17:21:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ru.nixer.tests.TestBase -->
+      <class name="ru.nixer.tests.GroupCreationTests">
+        <test-method status="PASS" signature="testEmptyGroupCreation()[pri:0, instance:ru.nixer.tests.GroupCreationTests@fc77f54]" name="testEmptyGroupCreation" duration-ms="1056" started-at="2014-12-14T17:21:53Z" finished-at="2014-12-14T17:21:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyGroupCreation -->
+        <test-method status="PASS" signature="testNonEmptyGroupCreation()[pri:0, instance:ru.nixer.tests.GroupCreationTests@fc77f54]" name="testNonEmptyGroupCreation" duration-ms="1032" started-at="2014-12-14T17:21:54Z" finished-at="2014-12-14T17:21:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNonEmptyGroupCreation -->
+      </class> <!-- ru.nixer.tests.GroupCreationTests -->
+      <class name="ru.nixer.tests.AlsoGroupCreationTests">
+        <test-method status="PASS" signature="testEmptyGroupCreation()[pri:0, instance:ru.nixer.tests.AlsoGroupCreationTests@1c7d672a]" name="testEmptyGroupCreation" duration-ms="1208" started-at="2014-12-14T17:21:51Z" finished-at="2014-12-14T17:21:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyGroupCreation -->
+        <test-method status="PASS" signature="testNonEmptyGroupCreation()[pri:0, instance:ru.nixer.tests.AlsoGroupCreationTests@1c7d672a]" name="testNonEmptyGroupCreation" duration-ms="1459" started-at="2014-12-14T17:21:52Z" finished-at="2014-12-14T17:21:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNonEmptyGroupCreation -->
+      </class> <!-- ru.nixer.tests.AlsoGroupCreationTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
