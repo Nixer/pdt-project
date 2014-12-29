@@ -33,5 +33,17 @@ public class ContactHelper extends HelperBase{
 		type(By.name("address2"), group.address2);
 		type(By.name("phone2"), group.phone2);
 	}
+	
+	public void initContactEdit() {
+		click(By.cssSelector("img[alt=\"Edit\"]"));
+	}
+	
+	public void submitContactDelete() {
+		click(By.xpath("//*[@value='Delete']"));
+	}
+	
+	public void submitContactUpdate() {
+		click(By.xpath("//*[@value='Update']"));
+	}
 
 }
