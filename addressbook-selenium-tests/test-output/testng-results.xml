@@ -1,25 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7051" started-at="2014-12-29T05:15:15Z" finished-at="2014-12-29T05:15:22Z">
+  <suite name="Default suite" duration-ms="13572" started-at="2015-01-07T05:35:09Z" finished-at="2015-01-07T05:35:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7051" started-at="2014-12-29T05:15:15Z" finished-at="2014-12-29T05:15:22Z">
-      <class name="ru.nixer.tests.ContactModificationTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.nixer.tests.ContactModificationTest@76da9e2a]" name="setUp" is-config="true" duration-ms="5189" started-at="2014-12-28T21:15:15Z" finished-at="2014-12-28T21:15:20Z">
+    <test name="Default test" duration-ms="13572" started-at="2015-01-07T05:35:09Z" finished-at="2015-01-07T05:35:23Z">
+      <class name="ru.nixer.tests.GroupModificationTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.nixer.tests.GroupModificationTests@6a13a848]" name="setUp" is-config="true" duration-ms="5737" started-at="2015-01-06T21:35:09Z" finished-at="2015-01-06T21:35:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="modifySomeContact()[pri:0, instance:ru.nixer.tests.ContactModificationTest@76da9e2a]" name="modifySomeContact" duration-ms="1619" started-at="2014-12-28T21:15:20Z" finished-at="2014-12-28T21:15:21Z">
+        <test-method status="PASS" signature="modifySomeGroup(ru.nixer.tests.GroupData)[pri:0, instance:ru.nixer.tests.GroupModificationTests@6a13a848]" name="modifySomeGroup" duration-ms="1592" started-at="2015-01-06T21:35:15Z" data-provider="randomValidGroupGenerator" finished-at="2015-01-06T21:35:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [name=, header=test-670051513, footer=test145831086]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- modifySomeContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.nixer.tests.ContactModificationTest@76da9e2a]" name="tearDown" is-config="true" duration-ms="234" started-at="2014-12-28T21:15:21Z" finished-at="2014-12-28T21:15:22Z">
+        </test-method> <!-- modifySomeGroup -->
+        <test-method status="PASS" signature="modifySomeGroup(ru.nixer.tests.GroupData)[pri:0, instance:ru.nixer.tests.GroupModificationTests@6a13a848]" name="modifySomeGroup" duration-ms="1813" started-at="2015-01-06T21:35:17Z" data-provider="randomValidGroupGenerator" finished-at="2015-01-06T21:35:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [name=test849502105, header=test-819529186, footer=test426001027]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeGroup -->
+        <test-method status="PASS" signature="modifySomeGroup(ru.nixer.tests.GroupData)[pri:0, instance:ru.nixer.tests.GroupModificationTests@6a13a848]" name="modifySomeGroup" duration-ms="1414" started-at="2015-01-06T21:35:18Z" data-provider="randomValidGroupGenerator" finished-at="2015-01-06T21:35:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [name=test-600129139, header=test-1757801564, footer=test868129462]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeGroup -->
+        <test-method status="PASS" signature="modifySomeGroup(ru.nixer.tests.GroupData)[pri:0, instance:ru.nixer.tests.GroupModificationTests@6a13a848]" name="modifySomeGroup" duration-ms="1377" started-at="2015-01-06T21:35:20Z" data-provider="randomValidGroupGenerator" finished-at="2015-01-06T21:35:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [name=test1332487963, header=test-510230508, footer=]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeGroup -->
+        <test-method status="PASS" signature="modifySomeGroup(ru.nixer.tests.GroupData)[pri:0, instance:ru.nixer.tests.GroupModificationTests@6a13a848]" name="modifySomeGroup" duration-ms="1380" started-at="2015-01-06T21:35:21Z" data-provider="randomValidGroupGenerator" finished-at="2015-01-06T21:35:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [name=test-1495385408, header=test-72004440, footer=test-1129076314]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeGroup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.nixer.tests.GroupModificationTests@6a13a848]" name="tearDown" is-config="true" duration-ms="246" started-at="2015-01-06T21:35:23Z" finished-at="2015-01-06T21:35:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ru.nixer.tests.ContactModificationTest -->
+      </class> <!-- ru.nixer.tests.GroupModificationTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

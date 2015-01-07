@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ru.nixer.tests.ContactModificationTest">
+      <class name="ru.nixer.tests.GroupModificationTests">
         <methods>
-          <include name="modifySomeContact"/>
+          <include name="modifySomeGroup"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- ru.nixer.tests.ContactModificationTest -->
+      </class> <!-- ru.nixer.tests.GroupModificationTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
