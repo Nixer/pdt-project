@@ -39,9 +39,16 @@ public class ContactData implements Comparable<ContactData> {
 		this.phone2 = phone2;
 	}
 
+	
 	@Override
 	public String toString() {
-		return "ContactData [firstname=" + firstname + "]";
+		return "ContactData [firstname=" + firstname + ", lastname=" + lastname
+				+ ", address=" + address + ", home_phone=" + home_phone
+				+ ", mobile_phone=" + mobile_phone + ", work_phone="
+				+ work_phone + ", email1=" + email1 + ", email2=" + email2
+				+ ", bday=" + bday + ", bmonth=" + bmonth + ", byear=" + byear
+				+ ", group_name=" + group_name + ", address2=" + address2
+				+ ", phone2=" + phone2 + "]";
 	}
 
 	@Override

@@ -1,25 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9195" started-at="2015-01-20T00:04:31Z" finished-at="2015-01-20T00:04:40Z">
+  <suite name="Default suite" duration-ms="15536" started-at="2015-01-20T04:12:57Z" finished-at="2015-01-20T04:13:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9195" started-at="2015-01-20T00:04:31Z" finished-at="2015-01-20T00:04:40Z">
-      <class name="ru.nixer.tests.ContactCreationTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.nixer.tests.ContactCreationTests@6033fec0]" name="setUp" is-config="true" duration-ms="5501" started-at="2015-01-19T16:04:31Z" finished-at="2015-01-19T16:04:36Z">
+    <test name="Default test" duration-ms="15536" started-at="2015-01-20T04:12:57Z" finished-at="2015-01-20T04:13:12Z">
+      <class name="ru.nixer.tests.ContactModificationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.nixer.tests.ContactModificationTest@6a9a9631]" name="setUp" is-config="true" duration-ms="5392" started-at="2015-01-19T20:12:57Z" finished-at="2015-01-19T20:13:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testNonEmptyContactCreation()[pri:0, instance:ru.nixer.tests.ContactCreationTests@6033fec0]" name="testNonEmptyContactCreation" duration-ms="3429" started-at="2015-01-19T16:04:36Z" finished-at="2015-01-19T16:04:40Z">
+        <test-method status="PASS" signature="modifySomeContact(ru.nixer.tests.ContactData)[pri:0, instance:ru.nixer.tests.ContactModificationTest@6a9a9631]" name="modifySomeContact" duration-ms="2588" started-at="2015-01-19T20:13:02Z" data-provider="randomValidContactGenerator" finished-at="2015-01-19T20:13:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ContactData [firstname=test-985713589, lastname=test820073276, address=test-1441865664, home_phone=, mobile_phone=test1432716301, work_phone=test-1318734978, email1=, email2=test1177960915, bday=null, bmonth=null, byear=null, group_name=null, address2=test1270808239, phone2=test19779285]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testNonEmptyContactCreation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.nixer.tests.ContactCreationTests@6033fec0]" name="tearDown" is-config="true" duration-ms="265" started-at="2015-01-19T16:04:40Z" finished-at="2015-01-19T16:04:40Z">
+        </test-method> <!-- modifySomeContact -->
+        <test-method status="PASS" signature="modifySomeContact(ru.nixer.tests.ContactData)[pri:0, instance:ru.nixer.tests.ContactModificationTest@6a9a9631]" name="modifySomeContact" duration-ms="1726" started-at="2015-01-19T20:13:05Z" data-provider="randomValidContactGenerator" finished-at="2015-01-19T20:13:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ContactData [firstname=, lastname=test-416542637, address=test-854672096, home_phone=test1737830818, mobile_phone=test-1948924445, work_phone=, email1=, email2=, bday=null, bmonth=null, byear=null, group_name=null, address2=test1372175446, phone2=test692977140]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeContact -->
+        <test-method status="PASS" signature="modifySomeContact(ru.nixer.tests.ContactData)[pri:0, instance:ru.nixer.tests.ContactModificationTest@6a9a9631]" name="modifySomeContact" duration-ms="1728" started-at="2015-01-19T20:13:06Z" data-provider="randomValidContactGenerator" finished-at="2015-01-19T20:13:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ContactData [firstname=test-202007359, lastname=, address=test925156922, home_phone=test1615014357, mobile_phone=, work_phone=, email1=, email2=, bday=null, bmonth=null, byear=null, group_name=null, address2=test2141016106, phone2=test151841578]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeContact -->
+        <test-method status="PASS" signature="modifySomeContact(ru.nixer.tests.ContactData)[pri:0, instance:ru.nixer.tests.ContactModificationTest@6a9a9631]" name="modifySomeContact" duration-ms="1845" started-at="2015-01-19T20:13:08Z" data-provider="randomValidContactGenerator" finished-at="2015-01-19T20:13:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ContactData [firstname=test1672960384, lastname=test-1572042459, address=test555405250, home_phone=test-1198357990, mobile_phone=test-330569324, work_phone=test-1981060902, email1=test-90667654, email2=, bday=null, bmonth=null, byear=null, group_name=null, address2=test-1674329762, phone2=test-474736218]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeContact -->
+        <test-method status="PASS" signature="modifySomeContact(ru.nixer.tests.ContactData)[pri:0, instance:ru.nixer.tests.ContactModificationTest@6a9a9631]" name="modifySomeContact" duration-ms="2004" started-at="2015-01-19T20:13:10Z" data-provider="randomValidContactGenerator" finished-at="2015-01-19T20:13:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ContactData [firstname=test-1631487528, lastname=test798167883, address=test2133054695, home_phone=test-688892971, mobile_phone=test85806681, work_phone=, email1=test-1445230060, email2=test-1521377207, bday=null, bmonth=null, byear=null, group_name=null, address2=, phone2=test312294122]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.nixer.tests.ContactModificationTest@6a9a9631]" name="tearDown" is-config="true" duration-ms="241" started-at="2015-01-19T20:13:12Z" finished-at="2015-01-19T20:13:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ru.nixer.tests.ContactCreationTests -->
+      </class> <!-- ru.nixer.tests.ContactModificationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

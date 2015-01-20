@@ -47,5 +47,35 @@ public class TestBase {
 		  }
 	  }
 	  
+	  
+	  @DataProvider
+	  public Iterator<Object[]>	randomValidContactGenerator() {
+		  List<Object[]> list = new ArrayList<Object[]>();
+		  for (int i = 0; i < 5; i++){
+			    ContactData contact = new ContactData();
+			    contact.firstname = generateRandomStringContact();
+			    contact.lastname = generateRandomStringContact();
+			    contact.address = generateRandomStringContact();
+			    contact.home_phone = generateRandomStringContact();
+			    contact.mobile_phone = generateRandomStringContact();
+			    contact.work_phone = generateRandomStringContact();
+			    contact.email1 = generateRandomStringContact();
+			    contact.email2 = generateRandomStringContact();
+			    contact.address2 = generateRandomStringContact();
+			    contact.phone2 = generateRandomStringContact();
+			    list.add(new Object[]{contact});
+			  }
+		  return list.iterator();	  
+	  }
+	  
+	  public String generateRandomStringContact() {
+		  Random rnd = new Random();
+			    if (rnd.nextInt(5) == 0) {
+		 		    return "";
+			    } else {
+		 		    return "test" + rnd.nextInt();
+			    }		    		    	  
+	  }
+	  
 }
 	
