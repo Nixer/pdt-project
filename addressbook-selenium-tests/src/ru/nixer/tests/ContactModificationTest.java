@@ -8,11 +8,13 @@ import java.util.Random;
 
 import org.testng.annotations.Test;
 
+import static ru.nixer.fw.ContactHelper.MODIFICATION;
+
 public class ContactModificationTest extends TestBase {
 	
 	@Test(dataProvider = "randomValidContactGenerator")
 	public void modifySomeContact(ContactData contact){
-	  app.getNavigationHelper().openMainPage();
+	  app.navigateTo().mainPage();
 	  
       //save old state
 	  List<ContactData> oldList = app.getContactHelper().getContacts();
@@ -22,9 +24,9 @@ public class ContactModificationTest extends TestBase {
 
 	  //actions
 	  app.getContactHelper().initContactEdit();	  
-	  app.getContactHelper().fillContactForm(contact);	  
+	  app.getContactHelper().fillContactForm(contact, MODIFICATION);	  
 	  app.getContactHelper().submitContactUpdate();
-	  app.getNavigationHelper().returnToHomePage();
+	  app.navigateTo().returnToHomePage();
 	  
 	  //save new state
 	  List<ContactData> newList = app.getContactHelper().getContacts();
